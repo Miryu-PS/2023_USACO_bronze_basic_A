@@ -1,5 +1,5 @@
 #include<cstdio>
-int move(){}
+int move(int N){return N?2*move(N-1)+1:0;} // 직접 짜볼것! 
 void hanoi(int N, int from, int to)
 // 1~N을 from 기둥에서 to 기둥으로 옮기는 과정을 출력
 {
